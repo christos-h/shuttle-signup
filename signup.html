@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+</head>
+<body>
+<script>
+$('body').terminal({
+    help: function() {
+        this.echo(
+`Available commands:
+	help: show list of available commands
+	signup <email>: sign up for the shuttle beta
+`);
+
+    }
+}, {
+    greetings: `
+                         #######                                                                                        
+                      ##########                                                                                        
+                    ############                     (((                       ((       ,((      (((                    
+           ((((((#############                       (((                      (((      ((((      (((                    
+        (((((((((((########                (((((((   (((((((((   /(((   (((   (((((((  (((((((   (((    (((((((((       
+             (((((((((####                 (((((     (((   .(((  /(((   (((   (((      ((((      (((   ((((((((((       
+             (((((((((((##                    (((((  (((    (((  /(((   (((   (((      ((((      (((   (((              
+       ,,,,,,(((((((((((((                ,((((((((  (((    (((   (((((((((   (((((((   ((((((,  (((((  (((((((((       
+       //////      ((((                                                                                                 
+       //////      ((                                                                                                   
+
+Shuttle-Next Beta. Type "help" for a list of commands.
+`
+});
+</script>
+<style>
+:root {
+   --size: 1.4;
+}
+</style>
+</body>
+</html>
